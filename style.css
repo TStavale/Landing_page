@@ -44,6 +44,53 @@ a:hover {
 
 }
 
+.container-1 { 
+    background-image: url(./img/home.jpg);
+    height: 700px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+    filter: grayscale(100%);
+    
+}
+
+.container-1 h1 {
+    font-size: 80px;
+    color: white;
+    position: absolute;/* Para centralizar o texto, utilizei, position: relative no container-1 para servir de referência.
+                        Após coloquei position: absolute no elemento que queria mover ao centro, junto com top left e utilizei
+                        transform: translate e fui ajustando conforme achei mais adequado. */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    
+}
+
+.container-1 h2 {
+    font-size: 40px;
+    color: white;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+#Atuacao {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.container-2 {
+    background-color: white;
+    height: 400px;
+}
+
+.container-3 {
+    background-color: rgb(82, 53, 33);
+    height: 400px;
+}
 
 @media (max-width: 600px) {
     #menu {
@@ -55,6 +102,7 @@ a:hover {
         background: rgb(206, 204, 204);
         height: 0px;
         transition: .6s; /* Para fazer a transição da altura de de zero para 100%. */
+        z-index: 1000;
         visibility: hidden; /* Para esconder os itens do menu. */
         overflow-y: hidden; /* Utilizei o overflow no eixo y com hidden, para quando clicar no botão, esconder o menu. */
     }
@@ -116,5 +164,6 @@ a:hover {
                     Porêm para que o top funcione, o elemento tem que ter um posicionamento, então troquei 
                     aqui(#hamburguer::after, #hamburguer::before) para "posicionamento:relative;". */
     }
+
 
 }

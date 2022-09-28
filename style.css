@@ -1,6 +1,7 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+
 }
 
 a {
@@ -30,6 +31,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(206, 204, 204);
+    font-family: 'open sans','HelveticaNeue','Helvetica Neue','Helvetica-Neue',Helvetica,Arial,sans-serif;
 }
 
 #menu {
@@ -145,86 +147,27 @@ hr {
     background-color: rgb(82, 53, 33);
     height: 400px;
     filter: drop-shadow(10px 10px 40px #000000 );
+    display: flex;
+    align-items: center;
+}
+
+.text-sobre {
+    color: white;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+    border-left: 3px solid rgba(245, 125, 44, 0.993);
+    
+}
+
+.container-3 p {
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 .container-4 {
     background-color: white;
     height: 400px;
-}
-
-
-@media (max-width: 600px) {
-    #menu {
-        display: block;
-        position: absolute; /* Ficar por cima de qualquer elemento na tela. */
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: rgb(206, 204, 204);
-        height: 0px;
-        transition: .6s; /* Para fazer a transição da altura de de zero para 100%. */
-        z-index: 1000;
-        visibility: hidden; /* Para esconder os itens do menu. */
-        overflow-y: hidden; /* Utilizei o overflow no eixo y com hidden, para quando clicar no botão, esconder o menu. */
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 70px); /* Para ocupar 100% da tela, utilizei o "vh" (viewport height), entretanto ele cria um scroll porque
-                        ele esta colocando a altura de 1005 da tela, porem a 70px do topo. Então fazer um calculo para tirar o scroll. */
-        visibility: visible; /* Para aparecer os itens do menu. */
-    }
-
-    #menu a {
-        padding: 8px 0;
-        margin: 0 16px;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-
-    }
-
-    #buttonMenu {
-        display: flex;
-        padding: 8px 16px;
-        font-size: 16px;
-        border: none;
-        background: none;
-        cursor: pointer; /* Altera a seta do mouse para uma mão. */
-        gap: 8px;
-    }
-
-/* Criando o menu hamburguer. */
-
-    #hamburguer {
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after, #hamburguer::before {
-        content: "";
-        display: block; /* Indicar que ele é um elemento de bloco, para poder pegar o height e o width. */
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        position: relative;
-    }
-
-    /* Criando o efeito do butão quando estiver ativo, alterando para um "X". */
-
-    #nav.active #hamburguer {
-        border-top-color: transparent; /* Para esconder o primeiro traço.*/
-
-    }
-
-    #nav.active #hamburguer::before {
-        transform: rotate(45deg);
-    }
-
-    #nav.active #hamburguer::after {
-        transform: rotate(-45deg);
-        top: -7px; /* Utilizei para posicionar o elemento mais acima, pois estava rotacionando no eixo central dele, que fica abaixo.
-                    Porêm para que o top funcione, o elemento tem que ter um posicionamento, então troquei 
-                    aqui(#hamburguer::after, #hamburguer::before) para "posicionamento:relative;". */
-    }
-
-
 }

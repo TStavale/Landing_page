@@ -143,8 +143,8 @@ hr {
     width: 20%;
     background: rgba(219, 218, 218, 0.534);
     border-radius: 5%;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    vertical-align: none;
     text-align: center;
     
 }
@@ -354,20 +354,10 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     
 }
 
-.face-img {
+.face-img, .inst-img, .link-img {
     width: 25px;
     margin-right: 5px;
 
-}
-
-.inst-img {
-    width: 25px;
-    margin-right: 5px;
-}
-
-.link-img {
-    width: 25px;
-    margin-right: 5px;
 }
 
 .copi {

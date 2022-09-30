@@ -11,7 +11,7 @@
 <body>
     <header id="header">
         <a id="logo" href="#index.html">
-        <img class="img-logo" src="/img/Logo-Adv.png" alt="">    
+        <img class="img-logo" src="./img/Logo-Adv.png" alt="">    
         </a>
         <nav id="nav">
             <button id="buttonMenu">Menu
@@ -31,7 +31,7 @@
             <h2>Advogados Associados</h2>
         </div>
     </section>
-    <section id="Atuacao">
+    <section id="atuacao">
         <div class="text-atuacao">
             <h2>ÁREAS DE ATUAÇÃO</h2>
         </div>
@@ -98,19 +98,28 @@
         </div>
     </Section>
     <section id="contatos">
-        <div class="container-4">           
-                <form class="form-box">
-                    <div class="form-elementos">
-                        <h2>Entre em contato para marcarmos um encontro e descobrirmos como podemos te ajudar.</h2>
-                        <input id="name" name="name" type="text" placeholder="Nome" required>
-                        <input  id="email" name="email"  type="email" placeholder="E-mail" required>
-                        <textarea id="box-comentarios" name="comentarios" rows="10" cols="30" maxlength="500" placeholder="Mensagem"></textarea>
-                        <button id="form-enviar" type="submit">Enviar</button>
-                    </div>
-                </form>
+        <div class="container-4">
+            <div class="form-box">
+                <form action="#" method="post">
+                    <h2>Entre em contato para marcarmos um encontro e descobrirmos como podemos te ajudar.</h2>
+                    <input id="name" name="name" type="text" placeholder="Nome*" required>
+                    <input  id="email" name="email"  type="email" placeholder="E-mail*" required>
+                    <textarea id="box-comentarios" name="comentarios" rows="10" cols="30" maxlength="500" placeholder="Mensagem*"></textarea>
+                    <button id="form-enviar" type="submit">Enviar</button>
+                    </form>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1837.6427398617345!2d-43.17364674401485!3d-22.902838831355087!
+                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x9981e22cedb281%3A0xef9e74895bb07e36!2sPra%C3%A7a%20Quinze%20de%20
+                Novembro%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020010-010!3m2!1d-22.9028831!2d-43.1723991!5e0!3m2!1spt-BR!2sbr!
+                4v1664467445473!5m2!1spt-BR!2sbr" allowfullscreen="" 
+                loading="lazy" class="google-maps"></iframe>
+            </div>
         </div>
     </section>
+    <footer id="footer">
 
+    </footer>
 
     <script src="main.js"></script>
 </body>

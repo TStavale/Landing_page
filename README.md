@@ -1,7 +1,5 @@
 <h1 align="center"> LANDING PAGE </h1>
 
-<h3>""Em andamento"</h3>
-
 <h2>OBJETIVO</h2>
 
 Criar uma landing page responsiva, utilizando flexbox e com menu hambúrguer. Adicionei varias divs, formulário, o google maps e links para redes sociais.

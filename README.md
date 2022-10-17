@@ -8,9 +8,9 @@ Para esse projeto usei HTML, CSS e JavaScript (para o menu hamburguer).
 
 <h2> RESULTADO</h2>
 
-<img src="./img/Landin-page-Adv1.png">
+<img src="./assets/img/Landin-page-Adv1.png">
 
-<img src="./img/Landin-page-Adv2.png">
+<img src="./assets/img/Landin-page-Adv2.png">
 
 <h2>ACESSE</h2>
 
@@ -23,4 +23,5 @@ Para esse projeto usei HTML, CSS e JavaScript (para o menu hamburguer).
 
   <li>CSS</li>
 
-<li>JavaScript</li>
+  <li>JavaScript</li>
+</ul>

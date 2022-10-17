@@ -63,7 +63,7 @@ a:hover {
 
 /*SECTION HOME*/
 .container-1 {
-    background-image: url(./img/home.jpg);
+    background-image: url(/assets/img/home.jpg);
     height: 700px;
     max-width: 100%;
     background-position: center;
@@ -362,5 +362,4 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 .copi {
     padding: 10px;
     background: rgb(206, 204, 204);
-}
-    
+}   

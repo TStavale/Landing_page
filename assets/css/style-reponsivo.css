@@ -1,6 +1,6 @@
 @media (max-width: 1100px) {
     hr {
-        transform: translate(-50%, 25450%);
+        transform: translate(-50%, 23000%);
     }
     
     .container-3 {
@@ -42,7 +42,7 @@
     }
 
     hr {
-        transform: translate(-50%, 25500%);
+        transform: translate(-50%, 23000%);
     }
 
     .container-2 {
@@ -84,7 +84,7 @@
     .text-adv1, .text-adv2, .text-adv3, .text-adv4 {
         padding: 5px;
         text-align: left;
-        margin: 30px;
+        margin: 0;
         max-width: 70%;
   
     }
@@ -215,7 +215,7 @@
 
     hr {
         width: 500px;
-        transform: translate(-50%, 15500%);
+        transform: translate(-50%, 13000%);
     }
 
     .container-2 {
